@@ -1,0 +1,130 @@
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <RelativeLayout 
+                    android:id="@+id/zhw_topbar"
+                    style="@style/topbar_bg"
+            >
+      
+        <TextView android:id="@+id/topbar_title" android:text="@string/show" style="@style/topbar_text"/>
+    
+    </RelativeLayout>
+
+<RelativeLayout 
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bar_bg_blue">
+    <!--Task Name-->
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="任务名称："
+            android:textColor="@color/white"
+            android:id="@+id/task_name_tv" />
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:singleLine="true"
+            android:layout_below="@id/task_name_tv"
+           
+            android:id="@+id/task_name_et"/>
+
+
+    <!--Task describe-->
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="任务详情:"
+            android:textColor="@color/white"
+            android:layout_below="@id/task_name_et"
+            android:id="@+id/task_Detail"
+            android:layout_gravity="left"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:minLines="5"
+            android:maxLines="10"
+           
+            android:layout_below="@id/task_Detail"
+         
+            android:id="@+id/editText1" />
+
+
+    <!--Task importance-->
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="重要程度："
+            android:layout_below="@id/editText1"
+            android:id="@+id/task_imp_tv"/>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+			android:progress="1"
+			android:stepSize="1"
+            android:numStars="5"
+            android:layout_below="@id/task_imp_tv"
+            android:id="@+id/task_imp_st"
+            android:longClickable="false"/>
+
+ <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="活动重复性"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/end_diog_bt"
+                android:layout_below="@id/task_imp_st"
+                />
+        <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TaskFrequnce"
+                android:layout_below="@id/end_diog_bt"
+                />
+ <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="@color/white"
+                android:text="在这里选择日期"
+                android:layout_below="@id/TaskFrequnce"
+                android:textSize="20dp"
+                android:minHeight="40dp"
+                android:background="@drawable/button_bg_green"
+                android:id="@+id/RegularSelectDateTime"
+                />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="确认修改"
+            android:textSize="20dp"
+            android:minHeight="40dp"
+            android:background="@drawable/button_bg_blue"
+            android:layout_alignParentBottom="true"
+
+            android:textColor="@color/white"
+            android:id="@+id/DailyOKButton"/>
+
+
+</RelativeLayout>
+</LinearLayout>

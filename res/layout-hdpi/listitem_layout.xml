@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:id="@+id/list_item">
+    <LinearLayout
+            android:id="@+id/main_mess_lo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:baselineAligned="false"
+            android:layout_weight="6" android:layout_marginLeft="0dp">
+        <LinearLayout
+                android:id="@+id/img_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+
+                android:gravity="center"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip">
+            <ImageView
+                    android:id="@+id/user_logo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+
+                    android:gravity="center"
+
+                    android:layout_weight="3"
+                    />
+            <!--android:src="@drawable/userlogo"-->
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/main_text_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:layout_weight="3" android:layout_marginLeft="5dp" android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+
+            <TextView
+                    android:id="@+id/task_name"
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="任务名称"
+                    android:maxLength = "8"
+                    />
+            <TextView
+                    android:id="@+id/task_bi"
+                    android:layout_height="wrap_content"
+                    android:layout_width="149dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:maxLength = "20"
+                    android:text="这是任务简介区域，在本区域，你可以看到你的任务的简短描述！"
+                    />
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/count_down_time_ll"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+            <TextView
+                    android:id="@+id/count_time_tv"
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:gravity="center_vertical|right"
+                    android:layout_gravity="right"/>
+            <Button  android:layout_width="60dip"
+                     android:layout_height="wrap_content"
+                     android:text="完成"
+                     android:gravity="center"
+                     android:background="@drawable/top_bar_bg_red"
+                     android:layout_gravity="center"
+                    android:visibility="gone"
+            android:id="@+id/curDel_btn" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

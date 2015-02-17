@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+        >
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/widget_main"
+                android:layout_height="72dip"
+                android:layout_width="72dip"
+                android:src="@drawable/wight_main"
+                ></ImageButton>
+        <ImageButton
+                android:id="@+id/widget_eve"
+                android:layout_height="72dip"
+                android:layout_width="72dip"
+                android:src="@drawable/wigt_eve"
+
+                ></ImageButton>
+        <!-- android:src="@drawable/eve_day"-->
+        <ImageButton
+                android:id="@+id/widget_st"
+                android:layout_height="72dip"
+                android:layout_width="72dip"
+                android:src="@drawable/wigt_sh"
+                ></ImageButton>
+        <ImageButton
+                android:id="@+id/widget_cl"
+                android:layout_height="72dip"
+                android:layout_width="72dip"
+                android:src="@drawable/wigt_lg"
+                ></ImageButton>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="288dip"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:background="@drawable/widget_bg"
+            android:id="@+id/list_item">
+        <LinearLayout
+                android:id="@+id/main_mess_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:gravity="center"
+                android:baselineAligned="false"
+                android:layout_weight="6" android:layout_marginLeft="0dp">
+            <LinearLayout
+                    android:id="@+id/img_lo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:baselineAligned="false"
+
+                    android:gravity="center"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip">
+                <ImageView
+                        android:id="@+id/widget_user_logo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+
+                        android:gravity="center"
+
+                        android:layout_weight="3"
+                        />
+                <!--android:src="@drawable/userlogo"-->
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/main_text_lo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:layout_weight="3" android:layout_marginLeft="5dp" android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+
+                <TextView
+                        android:id="@+id/widget_task_name"
+
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+
+                        />
+                <TextView
+                        android:id="@+id/widget_task_bi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="140dip"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/count_down_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false"
+                    android:layout_weight="1">
+                <TextView
+                        android:id="@+id/widget_count_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textColor="@color/black"
+
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="false"
+                        android:gravity="center_vertical|right"
+                        android:layout_gravity="right"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+        <!-- <LinearLayout      android:orientation="horizontal"
+            android:layout_width="288dip"
+            android:layout_height="144dip"
+
+
+<TextView
+     android:id="@+id/to_end_time"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="@string/hello"
+     android:textSize="15dip"
+     android:textColor="#ff0000"
+     />
+
+
+</LinearLayout>
+-->
+        <!--<TextView
+                android:id="@+id/to_end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:textSize="15dip"
+                android:textColor="#ff0000"
+                />-->
+        <!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:id="@+id/layout" android:layout_height="fill_parent">
+          <ImageButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/wight_img_bt"
+                  android:src="@drawable/selected"></ImageButton>
+	<TextView android:text="@string/load" android:id="@+id/TextView01"
+		  android:clickable="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>-->

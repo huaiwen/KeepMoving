@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">坚持达人</string>
+    <string name="app_name">坚持达人</string>
+    <string name="zhw">每日任务</string>
+    <string name="cml">短期任务</string>
+    <string name="day">每日任务</string>
+    <string name="shortt">短期任务</string>
+    <string name="longg">周期任务</string>
+    <string name="chengjiu">成就系统</string>
+    <string name="Seting">设置</string>
+    <string name="addNewEve">添加每日任务</string>
+    <string name="addNewSht">添加短期任务</string>
+    <string name="addNewLot">添加周期任务</string>
+    <string name="show">任务详情</string>
+    <string name="load">12:29</string>
+    <string name="change">12:30</string>
+    <string name="title_activity_show_task">ShowTask</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detaildaily">Detaildaily</string>
+    <string name="title_activity_edit_short_task">EditShortTask</string>
+    <string name="title_activity_detail_short">DetailShort</string>
+    <string name="title_activity_edit_regular">EditRegular</string>
+    <string name="title_activity_detail_regular">DetailRegular</string>
+    <string name="swipeToDeleteListView">SwipeToDeleteListView</string>
+    <string name="swipeToDeleteListViewDemo">SwipeToDeleteListView demo</string>
+    <string name="withoutConfirm">Without confirmation</string>
+    <string name="withConfirm">With confirmation</string>
+    <string name="deleted">完成</string>
+    <string name="confirmDeletions">Confirm deletions</string>
+    <string name="cancelDeletions">Cancel deletions</string>
+    <string name="appname">shishi</string>
+
+
+</resources>

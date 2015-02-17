@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Database"
+            android:id="@+id/CreateDatabase" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Database"
+            android:id="@+id/DeleteDatabase" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Person Table"
+            android:id="@+id/CreatePersonTable" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Person Table"
+            android:id="@+id/DeletePersonTable" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert User"
+            android:id="@+id/InsertUser" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete User"
+            android:id="@+id/DeleteUser" android:layout_gravity="left|center_vertical" android:singleLine="false"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Query User"
+            android:id="@+id/QueryUser" android:layout_gravity="left|center_vertical" android:longClickable="true"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Query User"
+            android:id="@+id/UpdateUser" android:layout_gravity="left|center_vertical" android:longClickable="true"/>
+</LinearLayout>
+

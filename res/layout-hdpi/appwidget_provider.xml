@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="288dip"
+    android:minHeight="144dip"
+    android:layout_height="288dip"
+    android:layout_width="288dip"
+    android:updatePeriodMillis="86400000"
+    android:initialLayout="@layout/widget_main">
+
+</appwidget-provider>
+        <!-- android:minWidth="200dip"
+         android:minHeight="50dip"
+         定义widget的最小宽高
+           android:layout_height="144dip"
+    android:layout_width="200dip"
+    定义widget的一般宽高
+      android:updatePeriodMillis="86400000"widgert的刷新率
+        android:initialLayout="@layout/widget_main"widget的布局
+         -->

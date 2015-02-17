@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/menu_linear"
+
+    >
+    <ImageView 
+        android:id="@+id/menuIcon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       	android:layout_gravity="bottom|center"
+
+        />
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+        <TextView
+                android:id="@+id/menuText_0"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:textSize="20dip"
+                android:text="坚持达人"
+                android:textColor="#ffffffff"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="坚持达人"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    </FrameLayout>
+    <!--android:layout_marginLeft="88dp"-->
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+        <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="84dip"
+                android:layout_gravity="center_vertical|left"
+                android:orientation="vertical"
+                android:id="@+id/progress_ll">
+            <TextView
+                    android:id="@+id/menupc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textColor="#ffffffff"
+
+
+                    />
+
+    <ProgressBar android:id="@+id/menuProgressBar"
+            android:layout_height="wrap_content"
+            android:layout_width="78dip"
+            android:layout_gravity="bottom|center_vertical|left"
+            style="?android:attr/android:progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/barcolor"
+            android:layout_marginLeft="5dip"
+            android:max="100"
+            android:progress="50"
+
+            />
+        </LinearLayout>
+    <TextView
+            android:id="@+id/menuButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#ffffffff"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/menuText"/>
+    </FrameLayout>
+    <!--android:layout_marginLeft="132dp"-->
+    <!--android:src="@drawable/shezhi"
+     android:background="@drawable/back_behind_usershow_style"
+      android:scaleType="centerInside"
+         android:layout_width="@dimen/title_button_height"
+            android:layout_height="@dimen/title_button_height"-->
+</LinearLayout>

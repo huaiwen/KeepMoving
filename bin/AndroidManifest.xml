@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imudges.keepmoving"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/wight_main"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.imudges.keepmoving.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity android:name="com.zhw.ui.UiMainActivity" >
+        </activity>
+        <activity
+            android:name="com.zhw.guide.SplashActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhw.guide.GuideActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.zhw.ui.ShortTaskPageActivity" />
+        <activity android:name="com.zhw.imageswitcher.imgchooser" />
+        <activity android:name="com.zhw.ui.LongTaskPageActivity" />
+        <activity android:name="com.zhw.ui.ChengJiuPageActivity" />
+        <activity android:name="com.zhw.ui.AddShortTaskActivity" />
+        <activity android:name="com.zhw.ui.AddDailyTaskActivity" />
+        <activity android:name="com.zhw.ui.AddRegularTask" />
+        <activity android:name="com.zhw.ui.SettingPage" />
+        <activity android:name="com.zhw.ui.ui.PopWindow" />
+        <activity android:name="com.zhw.ui.detaileTask" />
+        <activity android:name="com.imudges.keepmoving.ShowTask" />
+        <receiver android:name="com.zhw.ui.Receiver"></receiver>
+        <receiver
+            android:name="com.zhw.widget.WidgetProvider"
+            android:icon="@drawable/wight_main"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/appwidget_provider" >
+
+                <!-- 指定桌面应用程序的appwidget_provider  文件，使其可作其管理文件 -->
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="com.zhw.widget.icon_eve_clicked" />
+                <action android:name="com.zhw.widget.icon_sht_clicked" />
+                <action android:name="com.zhw.widget.icon_lon_clicked" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhw.broadcast.response" />
+
+        <activity
+            android:name="com.imudges.keepmoving.Detaildaily"
+            android:label="@string/title_activity_detaildaily" >
+        </activity>
+        <activity
+            android:name="com.imudges.keepmoving.EditShortTask"
+            android:label="@string/title_activity_edit_short_task" >
+        </activity>
+        <activity
+            android:name="com.imudges.keepmoving.DetailShort"
+            android:label="@string/title_activity_detail_short" >
+        </activity>
+        <activity
+            android:name="com.imudges.keepmoving.EditRegular"
+            android:label="@string/title_activity_edit_regular" >
+        </activity>
+        <activity
+            android:name="com.imudges.keepmoving.DetailRegular"
+            android:label="@string/title_activity_detail_regular" >
+        </activity>
+        <receiver 
+            android:name="com.zhw.ui.Receiver"></receiver>
+         <receiver 
+            android:name="com.zhw.ui.ReceiverRegular"></receiver>
+         <service
+            android:name="com.zhw.ui.AlarmAlertService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.zhw.ui.AlarmAlertSericeRegular"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/short_task_topbar"
+                style="@style/topbar_bg"
+        >
+
+    <TextView android:id="@+id/topbar_title" android:text="@string/cml" style="@style/topbar_text" />
+    <ImageButton android:id="@+id/sequence_menu"
+                 android:background="@drawable/button_title_more"
+                 android:layout_alignTop="@+id/zhw_menuBtn"
+                 style="@style/topbar_right_btn"/>
+
+</RelativeLayout>

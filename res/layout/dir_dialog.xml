@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/dirdialog_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+    	android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip">
+    <ImageButton
+    	android:layout_width="40dip" 
+    	android:layout_height="40dip"
+    	android:id="@+id/btn_home" 
+    	android:scaleType="center"
+    	android:background="@null"
+        android:src="@drawable/dirchooser_home"
+    	android:layout_gravity="left"
+    	android:layout_weight="1"
+    />
+    <LinearLayout android:layout_width="140dip" 
+	    android:layout_height="35dip" 
+	    android:id="@+id/dir_layout"
+	    android:gravity="center"
+	    android:layout_weight="1">
+	    </LinearLayout>
+	<!--<TextView
+	    android:layout_width="140dip" 
+	    android:layout_height="35dip" 
+	    android:id="@+id/dir_str"
+	    android:gravity="center"
+	    android:layout_weight="1"
+    />    -->
+    <ImageButton
+    	android:layout_width="40dip" 
+    	android:layout_height="40dip"
+    	android:scaleType="center"
+    	android:background="@null"
+        android:src="@drawable/dirchooser_back"
+    	android:id="@+id/btn_back" 
+    	android:layout_gravity="right"
+    	android:layout_weight="1"
+    />
+    </LinearLayout>
+    <ListView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="300dip"
+    	android:id="@+id/list_dir"
+    />
+    
+    <Button
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/btn_ok"
+    	android:text="OK"/>
+
+</LinearLayout>
